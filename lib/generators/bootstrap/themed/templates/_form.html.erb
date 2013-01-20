@@ -1,7 +1,7 @@
 <%%= form_for @<%= resource_name %>, :html => { :class => 'form-horizontal' } do |f| %>
   <%%- if @<%= resource_name %>.errors.any? %>
     <div id="error_explanation">
-      <h2><%%= pluralize(@<%= resource_name %>.errors.count, "error") %> prohibited this complaint from being saved:</h2>
+      <h2><%%= pluralize(@<%= resource_name %>.errors.count, "error") %> occurred:</h2>
 
       <ul>
       <%% @<%= resource_name %>.errors.full_messages.each do |msg| %>
